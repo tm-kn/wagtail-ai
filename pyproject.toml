@@ -37,14 +37,10 @@ dependencies = [
     "Wagtail>=4.0",
     "langchain>=0.0.106",
     "tiktoken>=0.3.3",
-    "every-ai>=1.1.1"
 ]
 [project.optional-dependencies]
-openai = [
-    "every-ai[openai]>=1.1.1"
-]
-anthropic = [
-    "every-ai[anthropic]>=1.1.1"
+llm = [
+    "llm>=0.12,<1",
 ]
 testing = [
     "dj-database-url==2.1.0",
